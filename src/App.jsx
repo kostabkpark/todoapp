@@ -19,11 +19,12 @@ function App() {
     }
     setId(id => id + 1);
     setTodolist([...todolist, todoitem]);
+    setTodo("");
   }
   return (
     <>
       <h1>Todo list App</h1>
-      <form action="" onSubmit={addTodolist}>
+      <form onSubmit={addTodolist}>
         <input type="text" value={todo} onChange={onChange} />
         <input type="submit" value="Add" />
       </form>
